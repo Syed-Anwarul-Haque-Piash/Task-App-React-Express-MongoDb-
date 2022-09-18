@@ -1,0 +1,144 @@
+.container{
+    min-height: 100vh;
+    
+    
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    
+}
+.to-do{
+    width: 600px;
+    min-height: 400px;
+    box-shadow: 0 0 3px #000000;
+    position: relative;
+    padding: 10px 15px;
+}
+/* .to-do-header,
+.to-do-body,
+.to-do-footer{
+   width: 100%;
+} */
+.title{
+   text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+input{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.to-do-footer{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-left: 70px;
+}
+.to-do-body{
+    margin: 40px 0;
+}
+.to-do-group{
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #cccccc;
+    justify-content: space-between;
+}
+
+button{
+    margin-left: 25px;
+    background-color: transparent;
+    border: none;
+    /* box-shadow: 0 0 3px black; */
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size:20px;
+}
+button:first-child:hover svg{
+    background-color: #0000ff;
+}
+button:last-child:hover svg{
+    background-color: #ff0000;
+}
+.quick-container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: #0000001e;
+}
+.card-quick{
+    width: 800px;
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 10px;
+    /* display: flex; */
+}
+.card-row{
+    margin-bottom: 40px;
+}
+.back{
+    padding: 5px 25px;
+    background-color: #000000;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.back:hover{
+    transform: translateY(-5px);
+}
+.update{
+    display: block;
+    margin: 0 auto;
+    padding: 5px 15px;
+    color: #000000;
+    transition: all 0.5s;
+}
+.update:hover,.update:hover svg{
+    color:#00ff00 !important;
+}
+.info{
+    text-align: center;
+}
+.add{
+    display: block;
+    margin: 10px auto 15px auto;
+    padding: 5px 25px;
+    background-color: #000000;
+    box-shadow: 0 0 3px #000000;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.add:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+.formUpdate{
+    display: flex;
+    align-items: center;
+}
+
